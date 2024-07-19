@@ -1,0 +1,21 @@
+javac -cp "lib/servlet-api.jar" -d build src/com/example/HelloServlet.java
+javac -cp "lib/servlet-api.jar" -d build src/com/example/UpdateProductServlet.java
+javac -cp "lib/servlet-api.jar" -d build src/com/example/DeleteProductServlet.java
+javac -cp "lib/servlet-api.jar" -d build src/com/example/AddProductServlet.java
+cp -r web/* build/
+mkdir -p build/WEB-INF/classes
+cp -r build/com build/WEB-INF/classes/
+jar cvf TomcatServer.war -C build .
+copy TomcatServer.war apache-tomcat-9.0.89\webapps
+
+keytool -genkey -alias tomcat -keyalg RSA -Keystore Keystore.jks -keysize 2048
+
+DESDE LA CARPETA DE TOMCAT /BIN
+.\startup.bat
+
+GENERAR DOCKER SIN DOCKER COMPOSE
+docker build -t tomcat_example .
+docker run -d -p 8081:8080 tomcat_example
+
+
+docker-compose up --build

@@ -1,0 +1,132 @@
+
+body {
+  background-color: #D2B48C;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+}
+
+h1 {
+  background-color: #654321;
+  color: white;
+  font-size: 36px;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 80%;
+  background-color: #F5F5F5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 15px;
+  border: 1px solid #654321;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+}
+
+th {
+  background-color: #654321;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #ECECEC;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #654321;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  background-color: #543210;
+}
+
+
+footer {
+  background-color: #654321;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.update-btn {
+  background-color: #007bff; /* Azul */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.update-btn:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+.add-btn {
+  background-color: #177d29; /* Azul más oscuro al pasar el mouse */
+}
+.delete-btn {
+  background-color: #dc3545; /* Rojo */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c82333; /* Rojo más oscuro al pasar el mouse */
+}
+
+
+.form-container {
+  width: 400px; 
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"] {
+  width: calc(100% - 20px); 
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px; 
+}

@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [15/Jun/2024:11:36:43 -0600] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [15/Jun/2024:11:36:57 -0600] "GET /TomcatServer/index.html HTTP/1.1" 200 299
+0:0:0:0:0:0:0:1 - - [15/Jun/2024:11:37:17 -0600] "GET /TomcatServer/tomcat_server HTTP/1.1" 200 118
+0:0:0:0:0:0:0:1 - - [15/Jun/2024:11:40:19 -0600] "GET /TomcatServer/tomcat_server HTTP/1.1" 404 717
+0:0:0:0:0:0:0:1 - - [15/Jun/2024:11:41:03 -0600] "GET /TomcatServer/index.html HTTP/1.1" 404 714
+0:0:0:0:0:0:0:1 - - [15/Jun/2024:11:42:32 -0600] "GET /TomcatServer/index.html HTTP/1.1" 200 299
+0:0:0:0:0:0:0:1 - - [15/Jun/2024:11:42:34 -0600] "GET /TomcatServer/tomcat_server HTTP/1.1" 200 415

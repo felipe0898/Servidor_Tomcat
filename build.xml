@@ -1,0 +1,30 @@
+<project name="ApacheTomcatServer" basedir="." default ="dist">
+    <property name ="src" location="src/main/java"/>
+    <property name="build" location="build"/>
+    <property name="dist" location="dist"/>
+    <property name="web" location="web"/>
+
+    <target name="clean">
+        <delete dir="${build}"/>
+        <delete dir="${dist}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${build}"/>
+        <javac srcdir="${src}" destdir="${build}"/>
+    </target>
+
+    <target name="dist" depends="compile">
+        <mkdir dir="${dist}"/>
+        <mkdir dir="${dist}/WEB-INF"/>
+        <copy todir="${dist}/WEB-INF">
+            <fileset dir="${web}/WEB-INF"/>
+        </copy>
+        <copy todir="${dist}">
+            <fileset dir="${build}"/>
+        </copy>
+        <war destfile="${dist}/TomcatServer.war" webxml="${web}/WEB-INF/web.xml">
+            <fileset dir="${dist}"/>
+        </war>
+    </target>
+</project>
